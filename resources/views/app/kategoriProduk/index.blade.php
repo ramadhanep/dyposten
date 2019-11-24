@@ -14,6 +14,9 @@
         <div class="card card-primary">
             <div class="card-header">
                 <a href="#" class="btn btn-flat btn-icon icon-left btn-primary" data-toggle="modal" data-target="#modalCreate"><i class="fas fa-cube"></i> Tambah Data</a>
+                &nbsp;
+                &nbsp;
+                <a target="blank" href="{{ route('printKategoriProduk') }}" class="btn btn-flat btn-icon icon-left btn-primary"><i class="fas fa-print"></i> Cetak</a>
             </div>
             <div class="card-body">
             <div class="table-responsive">

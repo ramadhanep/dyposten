@@ -53,7 +53,7 @@
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Stok</label>
-                                    <input type="text" class="form-control" name="stok" required="" value="{{ $produk->stok }}">
+                                    <input type="number" class="form-control" name="stok" required="" value="{{ $produk->stok }}">
                                     <div class="invalid-feedback">
                                         Form Stok harus diisi!
                                     </div>
@@ -100,7 +100,7 @@
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Harga Beli</label>
-                                    <input type="text" class="form-control" name="harga_beli" required="" value="{{ $produk->harga_beli }}">
+                                    <input type="number" class="form-control" name="harga_beli" required="" value="{{ $produk->harga_beli }}">
                                     <div class="invalid-feedback">
                                         Form Harga Beli harus diisi!
                                     </div>
@@ -130,14 +130,14 @@
                                         </div>
                                     </div>
                                     <div class="invalid-feedback">
-                                        Form Currency harus diisi!
+                                        Form Harga Jual harus diisi!
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Diskon Produk</label>
-                                    <input type="text" class="form-control" name="diskon" required="" value="{{ $produk->diskon }}">
+                                    <input type="number" class="form-control" name="diskon" value="{{ $produk->diskon }}">
                                     <div class="invalid-feedback">
                                         Form Diskon Produk harus diisi!
                                     </div>

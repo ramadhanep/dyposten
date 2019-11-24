@@ -49,6 +49,10 @@ class CartController extends Controller
         if($h->stok < $request->input("jumlah")){
             return redirect()->route("transaksi.index")->with("alertBlock", "Stok hanya tersisa ".$h->stok);
         }
+
+        if($request->input("jumlah") < 1){
+            return redirect()->route("transaksi.index")->with("alertBlock", "Masukkan jumlah barang yang ingin Anda beli!");
+        }
         $d->jumlah = $request->input("jumlah");
         $d->user_id = \Auth::user()->id;
 

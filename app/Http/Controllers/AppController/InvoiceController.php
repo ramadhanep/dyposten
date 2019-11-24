@@ -108,4 +108,17 @@ class InvoiceController extends Controller
     {
         abort(404);
     }
+
+    public function print(){
+        if(\Auth::user()->level == "Admin Utama"){
+            $d['checkouts'] = Checkout::orderBy("id", "DESC")->get();
+            $d['informasiTokos'] = InformasiToko::first();
+            return view('app.invoice.print-au', $d);
+        }
+        else{
+            $d['checkouts'] = Checkout::where("user_id", \Auth::user()->id)->orderBy("id", "DESC")->get();
+            $d['informasiTokos'] = InformasiToko::first();
+            return view('app.invoice.print', $d);
+        }
+    }
 }

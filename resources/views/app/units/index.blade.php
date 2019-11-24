@@ -70,7 +70,7 @@
                     <div class="modal-body">
                         <input type="text" class="form-control" name="unit" required="" placeholder="Unit">
                         <div class="invalid-feedback">
-                            Form Currency harus diisi!
+                            Form Unit harus diisi!
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -97,7 +97,7 @@
                     <div class="modal-body">
                         <input id="currencyInputEdit" type="text" class="form-control" name="unit" required="" placeholder="Unit">
                         <div class="invalid-feedback">
-                            Form Currency harus diisi!
+                            Form Unit harus diisi!
                         </div>
                     </div>
                     <div class="modal-footer">

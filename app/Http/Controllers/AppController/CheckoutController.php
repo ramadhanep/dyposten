@@ -64,8 +64,14 @@ class CheckoutController extends Controller
         $cart = Cart::where("kode_unik", $kode_unik)->get();
         foreach($cart as $res){
             $produk = Produk::find($res->produk_id);
-            $produk->stok = $produk->stok - $res->jumlah;
-            $produk->save();
+            if($produk->stok - $res->jumlah < 0){
+                $produk->stok = 0;
+                $produk->save();
+            }
+            else{
+                $produk->stok = $produk->stok - $res->jumlah;
+                $produk->save();
+            }
         }
 
         return redirect()->route("invoice.show", $kode_unik)->with("alertStore", $request->input("total"));

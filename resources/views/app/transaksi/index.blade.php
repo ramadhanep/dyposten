@@ -80,7 +80,7 @@
                                 </td>
                                 <td>{{ $res->produk->nama }}</td>
                                 <td>{{ $res->jumlah }}</td>
-                                <td>IDR {{ number_format($res->sub_total,2,',','.') }}</td>
+                                <td>{{ $res->produk->currency->currency }} {{ number_format($res->sub_total,2,',','.') }}</td>
                                 <td>
                                     <a href="#" data-uri="{{ route('transaksi.destroy', $res->id) }}" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDestroy"><i class="fas fa-trash-alt"></i></a>
                                 </td>

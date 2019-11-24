@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Models\Kategori;
+use App\Models\InformasiToko;
 
 class KategoriController extends Controller
 {
@@ -99,5 +100,12 @@ class KategoriController extends Controller
         $d->delete();
 
         return redirect()->route("kategoriProduk.index")->with("alertDestroy", $kat);
+    }
+
+    public function print(){
+        $d['kategoriProduks'] = Kategori::orderBy("id", "DESC")->get();
+        $d['informasiTokos'] = InformasiToko::first();
+
+        return view("app.kategoriProduk.print", $d);
     }
 }

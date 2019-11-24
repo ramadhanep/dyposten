@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>404 &mdash; Dygraph</title>
-  <link rel="icon" href="{{ asset('img/logo.png') }}">
+  <title>404 &mdash; Dyposten</title>
 
-  <link rel="stylesheet" href="{{ asset('template/modules/bootstrap/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('font-awesome/all.css') }}">
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="{{ asset('stisla/modules/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('stisla/modules/fontawesome/css/all.min.css') }}">
 
-  <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
-  <link rel="stylesheet" href="{{ asset('template/css/components.css') }}">
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{{ asset('stisla/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('stisla/css/components.css') }}">
 </head>
 
 <body>
@@ -29,7 +32,7 @@
                 <div class="form-group floating-addon floating-addon-not-append">
                   <div class="input-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text">                          
+                      <div class="input-group-text">
                         <i class="fas fa-search"></i>
                       </div>
                     </div>
@@ -43,27 +46,33 @@
                 </div>
               </form>
               <div class="mt-3">
-                <a href="index.html">Back to Home</a>
+                <a href="{{ route('home') }}">Back to Home</a>
               </div>
             </div>
           </div>
         </div>
         <div class="simple-footer mt-5">
-          Copyright &copy; Dygraph 2019
+          Copyright &copy; Dyposten 2019
         </div>
       </div>
     </section>
   </div>
 
-  <script src="{{ asset('template/modules/jquery.min.js') }}"></script>
-  <script src="{{ asset('template/modules/popper.js') }}"></script>
-  <script src="{{ asset('template/modules/tooltip.js') }}"></script>
-  <script src="{{ asset('template/modules/bootstrap/js/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('template/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
-  <script src="{{ asset('template/modules/moment.min.js') }}"></script>
-  <script src="{{ asset('template/js/stisla.js') }}"></script>
-  
-  <script src="{{ asset('template/js/scripts.js') }}"></script>
-  <script src="{{ asset('template/js/custom.js') }}"></script>
+  <!-- General JS Scripts -->
+  <script src="{{ asset('stisla/modules/jquery.min.js') }}"></script>
+  <script src="{{ asset('stisla/modules/popper.js') }}"></script>
+  <script src="{{ asset('stisla/modules/tooltip.js') }}"></script>
+  <script src="{{ asset('stisla/modules/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('stisla/modules/nicescroll/jquery.nicescroll.min.js') }}"></script>
+  <script src="{{ asset('stisla/modules/moment.min.js') }}"></script>
+  <script src="{{ asset('stisla/js/stisla.js') }}"></script>
+
+  <!-- JS Libraies -->
+
+  <!-- Page Specific JS File -->
+
+  <!-- Template JS File -->
+  <script src="{{ asset('stisla/js/scripts.js') }}"></script>
+  <script src="{{ asset('stisla/js/custom.js') }}"></script>
 </body>
 </html>

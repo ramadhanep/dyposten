@@ -15,9 +15,11 @@ class RoleKasir
      */
     public function handle($request, Closure $next)
     {
-        if(\Auth::user()->level != "Kasir"){
+        if(\Auth::user()->level == "Kasir" || \Auth::user()->level == "Admin Utama"){
+            return $next($request);
+        }
+        else{
             abort(404);
         }
-        return $next($request);
     }
 }

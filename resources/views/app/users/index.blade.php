@@ -15,6 +15,9 @@
         <div class="card card-primary">
             <div class="card-header">
                 <a href="{{ route('users.create') }}" class="btn btn-flat btn-icon icon-left btn-primary"><i class="fas fa-users"></i> Tambah Data</a>
+                &nbsp;
+                &nbsp;
+                <a target="blank" href="{{ route('printUsers') }}" class="btn btn-flat btn-icon icon-left btn-primary"><i class="fas fa-print"></i> Cetak</a>
             </div>
             <div class="card-body">
             <div class="table-responsive">

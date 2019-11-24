@@ -18,7 +18,7 @@
                 <li><a class="nav-link" href="{{ route('ppn.index') }}"><i class="fas fa-money-bill-alt"></i> <span>PPN</span></a></li>
                 <li><a class="nav-link" href="{{ route('units.index') }}"><i class="fas fa-building"></i> <span>Units</span></a></li>
                 <li><a class="nav-link" href="{{ route('persentaseKeuntungan.index') }}"><i class="fas fa-percent"></i> <span>Persentase Keuntungan</span></a></li>
-                <li><a class="nav-link" href="{{ route('bahan.index') }}"><i class="fas fa-bookmark"></i> <span>Bahan</span></a></li>
+                {{-- <li><a class="nav-link" href="{{ route('bahan.index') }}"><i class="fas fa-bookmark"></i> <span>Bahan</span></a></li> --}}
                 <li><a class="nav-link" href="{{ route('kategoriProduk.index') }}"><i class="fas fa-cube"></i> <span>Kategori Produk</span></a></li>
                 <li class="menu-header">Inventory</li>
                 <li class="dropdown">
@@ -39,7 +39,7 @@
                 <li><a class="nav-link" href="{{ route('ppn.index') }}"><i class="fas fa-money-bill-alt"></i> <span>PPN</span></a></li>
                 <li><a class="nav-link" href="{{ route('units.index') }}"><i class="fas fa-building"></i> <span>Units</span></a></li>
                 <li><a class="nav-link" href="{{ route('persentaseKeuntungan.index') }}"><i class="fas fa-percent"></i> <span>Persentase Keuntungan</span></a></li>
-                <li><a class="nav-link" href="{{ route('bahan.index') }}"><i class="fas fa-bookmark"></i> <span>Bahan</span></a></li>
+                {{-- <li><a class="nav-link" href="{{ route('bahan.index') }}"><i class="fas fa-bookmark"></i> <span>Bahan</span></a></li> --}}
                 <li><a class="nav-link" href="{{ route('kategoriProduk.index') }}"><i class="fas fa-cube"></i> <span>Kategori Produk</span></a></li>
                 <li class="menu-header">Inventory</li>
                 <li class="dropdown">

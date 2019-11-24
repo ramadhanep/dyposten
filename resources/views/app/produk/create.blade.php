@@ -48,7 +48,7 @@
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Stok</label>
-                                    <input type="text" class="form-control" name="stok" required="">
+                                    <input type="number" class="form-control" name="stok" required="">
                                     <div class="invalid-feedback">
                                         Form Stok harus diisi!
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Harga Beli</label>
-                                    <input type="text" class="form-control" name="harga_beli" required="">
+                                    <input type="number" class="form-control" name="harga_beli" required="">
                                     <div class="invalid-feedback">
                                         Form Harga Beli harus diisi!
                                     </div>
@@ -115,14 +115,14 @@
                                         </div>
                                     </div>
                                     <div class="invalid-feedback">
-                                        Form Currency harus diisi!
+                                        Form Harga Jual harus diisi!
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-3">
                                 <div class="form-group">
                                     <label>Diskon Produk</label>
-                                    <input type="text" class="form-control" name="diskon" required="">
+                                    <input type="number" class="form-control" name="diskon">
                                     <div class="invalid-feedback">
                                         Form Diskon Produk harus diisi!
                                     </div>

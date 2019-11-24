@@ -26,7 +26,6 @@
                         <th>Nama Produk</th>
                         <th>Kategori</th>
                         <th>Stok</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,10 +42,6 @@
                         <td>{{ $res->nama }}</td>
                         <td>{{ $res->kategori->kategori }}</td>
                         <td>{{ $res->stok }}</td>
-                        <td>
-                            <a href="{{ route('produk.edit', $res->id) }}" class="btn btn-outline-warning btn-sm"><i class="fas fa-edit"></i></a>
-                            <a href="#" data-uri="{{ route('produk.destroy', $res->id) }}" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDestroy"><i class="fas fa-trash-alt"></i></a>
-                        </td>
                     </tr>
                     @endforeach
                 </tbody>

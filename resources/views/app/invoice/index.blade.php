@@ -13,6 +13,9 @@
     <div class="row">
         <div class="col-12">
         <div class="card card-primary">
+            <div class="card-header">
+                <a target="blank" href="{{ route('printRiwayatTransaksi') }}" class="btn btn-flat btn-icon icon-left btn-primary"><i class="fas fa-print"></i> Cetak</a>
+            </div>
             <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-striped" id="table-1">

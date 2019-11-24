@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\User;
+use App\Models\InformasiToko;
 
 class UserController extends Controller
 {
@@ -134,5 +135,12 @@ class UserController extends Controller
         $d->delete();
 
         return redirect()->route("users.index")->with("alertDestroy", $name);
+    }
+
+    public function print(){
+        $d['users'] = User::orderBy("id", "DESC")->get();
+        $d['informasiTokos'] = InformasiToko::first();
+
+        return view("app.users.print", $d);
     }
 }

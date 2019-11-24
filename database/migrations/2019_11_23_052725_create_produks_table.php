@@ -20,7 +20,7 @@ class CreateProduksTable extends Migration
             $table->bigInteger('unit_id')->unsigned();
             $table->string('barcode');
             $table->string('nama');
-            $table->bigInteger('stok');
+            $table->bigInteger('stok')->unsigned();
             $table->string('harga_beli');
             $table->string('harga_jual');
             $table->string('diskon')->nullable();
